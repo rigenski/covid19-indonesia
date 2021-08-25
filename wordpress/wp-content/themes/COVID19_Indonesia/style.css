@@ -1,0 +1,299 @@
+/*
+Theme Name: COVID19_Indonesia
+Author: Rigen Maulana
+Author URI: https://rygenzx.github.io
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: rgb(28, 30, 37);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+    padding-top: 5em;
+}
+
+.container {
+    padding: 1em 14%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* HEADER */
+
+header {
+    box-shadow: 0 2px 8px rgb(172, 172, 172);
+    padding: 0.2em 0;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+}
+
+header #branding a {
+    font-size: 1.4em;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    margin-right: 1em;
+}
+
+/* FOOTER */
+
+
+footer {
+    padding: 0.2em 0;
+    width: 100%;
+    background-color: rgb(70, 77, 90);
+}
+
+footer * {
+    color: #fff;
+}
+
+footer .copyright p {
+    font-size: 1em;
+}
+
+footer ul {
+    display: flex;
+}
+
+footer ul li {
+    margin-right: 0.8em;
+}
+
+/* CATEGORY */
+
+.entry-title {
+    margin-bottom: 1em;
+    font-size: 1.6em;
+}
+
+article {
+    display: flex;
+    margin-bottom: 1.2em;
+}
+
+article img {
+    width: 14em;
+    height: 8em;
+    border-radius: 10px;
+}
+
+article .information {
+    margin-left: 1em;
+}
+
+article .information h2 {
+    font-size: 1.2em;
+}
+
+article .information p {
+    color: rgb(126, 121, 121);
+    font-size: 0.9em;
+}
+
+
+article .information .detail {
+    margin-top: 0.6em;
+}
+
+/* ASIDE */
+
+#side-button {
+    width: 100%;
+    font-size: 1em;
+    padding: 0.4em 1em;
+    background-color: rgb(70, 77, 90);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgb(172, 172, 172);
+}
+
+aside {
+    margin-left: 1em;
+}
+
+#primary {
+    margin-top: 2em;
+    /* display: none; */
+}
+
+#primary label {
+    display: block;
+}
+
+#primary input {
+    padding: 0.4em;
+}
+
+.search-submit {
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+    border: none;
+    color: #fff;
+    background-color: rgb(70, 133, 250);
+}
+
+#recent-posts-2 ul li {
+    margin-top: 0.6em;
+}
+
+#recent-comments-2 {
+    display: none;
+}
+
+/* SINGLE */
+
+section .detail {
+    margin-top: 0.4em;
+}
+
+section img {
+    margin-top: 2em;
+    width: 100%;
+    height: 20em;
+}
+
+section .content p {
+    margin-top: 0.6em;
+    font-size: 1.2em;
+}
+
+
+/* MAIN */
+
+#main .mockup {
+    margin: 1em 0;
+}
+
+#main .mockup img {
+    width: 100%;
+}
+
+#main .col {
+    margin: 0.2em;
+}
+
+.editor .row .col{
+    flex-basis: 50%;
+}
+
+.editor article,  .news article{
+    display: block;
+}
+
+.editor .col:first-child article {
+    margin-right: 1em;
+}
+
+.editor article .information,  .news article .information{
+    margin-left: 0;
+}
+
+.editor article .thumbnail img,  .news article img{
+    width: 100%;
+}
+
+/* CONTACT */
+
+.contact .form {
+    display: block;
+    margin-bottom: 2em;
+}
+
+.contact input, .contact textarea {
+    height: 1.6em;
+    margin-bottom: 1em;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(196, 196, 196);
+    padding: 0.6em 1em;
+}
+
+.contact .btn button {
+    font-size: 1em;
+    padding: 0.8em 1em;
+    border-radius: 10px;
+    border: none;
+}
+
+.contact .btn button:first-child {
+    background-color: rgb(70, 133, 250);
+    color: #fff;
+}
+
+.contact .btn button:nth-child(2) {
+    background-color: rgb(250, 70, 70);
+    color: #fff;
+}
+
+/* ARROW */
+.side {
+    position: fixed;
+    z-index: 100;
+    right: 4%;
+    bottom: 4em;
+}
+
+.arrow {
+    border-radius: 1em;
+    font-size: 1.2em;
+    padding: 0.6em;
+    background-color: rgb(70, 133, 250);
+    border: none;
+}
+
+.arrow a {    
+    color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 1em 4%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 1em 1%;
+    }
+
+    .row {
+        display: block;
+    }
+
+    .editor .row {
+        display: flex;
+    }
+
+    aside {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #main article {
+        display: block;
+    }
+
+    #main article img{
+        width: 100%;
+    }
+
+    #main article .information{
+        margin-left: 0;
+    }
+}
